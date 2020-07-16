@@ -48,8 +48,9 @@ dependencies {
 
     // -------- LOCAL UNIT TESTS (use JUnit5)
     // JUnit Jupiter
-    def junit_jupiter_version = "5.3.2"
+    def junit_jupiter_version = "5.6.2"
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junit_jupiter_version"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:$junit_jupiter_version"
 
     // -------- MOCKITO
     def mockito_version = "2.19.0"
