@@ -1,12 +1,12 @@
 package com.bittencourt.unittesting.util
 
-import java.lang.IllegalArgumentException
 import java.text.SimpleDateFormat
 import java.util.*
 
 
 object DateUtil {
     private const val FULL_DATE_FORMAT = "MM-yyyy"
+    private const val MONTH_DATE_FORMAT = "MM"
     private const val WRITTEN_MONTH_DATE_FORMAT = "MMM"
 
     val currentMonthYearTimeStamp: String
@@ -23,7 +23,7 @@ object DateUtil {
     fun getWrittenMonthFromTimestamp(timestamp: String): String {
         val dateFormat =
             SimpleDateFormat(
-                FULL_DATE_FORMAT,
+                MONTH_DATE_FORMAT,
                 Locale.ENGLISH
             )
 
